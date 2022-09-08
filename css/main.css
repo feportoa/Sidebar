@@ -77,7 +77,7 @@ header > h1 {
     width: 85vw;
     padding: .5rem;
 
-    transition: ease 1s;
+    transition: ease .5s;
 }
 
 nav {
@@ -86,7 +86,7 @@ nav {
     width: 15vw;
     background-color: var(--green);
 
-    transition: ease 1s;
+    transition: ease .5s;
 }
 
 nav > #navFlex {
