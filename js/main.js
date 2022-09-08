@@ -6,7 +6,7 @@ function toggleBar() {
         flexToggleSvg = document.querySelectorAll('.flexItem svg'),
         flexToggleBurger = document.querySelector('.burger')
     ]
-    let flexToggle = document.querySelectorAll("nav, #navFlex .flexItem, #navFlex .flexItem p, #navFlex .flexItem svg, #navFlex .flexItem .burger");
+    let flexToggle = document.querySelectorAll("header h1, nav, #navFlex .flexItem, #navFlex .flexItem p, #navFlex .flexItem svg, #navFlex .flexItem .burger, .navUser img, .navUser div, .navUser .logOut");
 
     console.log("PORRA")
     for(let i = 0; i < flexToggle.length; i++){
