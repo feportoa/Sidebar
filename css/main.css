@@ -4,10 +4,190 @@
     --body-bg-color: #dce4e3;
     --green: #18c29c;
     --light-green: #8ed7c6;
-      --light-grey: #dce4e3;
+    --light-grey: #dce4e3;
     --text-color: #084236;
 
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     font-size: 62.5%;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    background: var(--body-bg-color);
+}
+/* JS Action */
+
+nav.hiddenBar {
+    width: 4vw;
+}
+
+nav > #navFlex > .flexItem.hiddenBar {
+    padding: 1rem;
+    justify-content: center;
+}
+nav > #navFlex > .flexItem.hiddenBar:hover{
+    flex-grow: 0;
+}
+
+nav > #navFlex > .flexItem.hiddenBar > svg {
+    height: 4rem;
+}
+
+nav > #navFlex > .flexItem > p.hiddenBar {
+    display: none;
+}
+
+nav > #navFlex > .flexItem:nth-child(1).hiddenBar {
+    padding: 0;
+}
+
+nav > #navFlex > .flexItem:nth-child(1) > svg:nth-child(1).hiddenBar {
+    display: none;
+}
+
+nav > #navFlex > .flexItem:nth-child(1) > .burger.hiddenBar {
+    padding: 0;
+    position: relative;
+}
+
+nav > .navUser > img.hiddenBar, nav > .navUser > .user.hiddenBar {
+    display: none;
+}
+
+nav > .navUser > svg.hiddenBar {
+    height: 4rem;
+    position: relative;
+    transform: translateX(25%);
+}
+
+/* CSS selectors*/
+
+header > h1 {
+    position: absolute;
+    right: 0;
+    width: 85vw;
+    padding: .5rem;
+}
+
+nav {
+    position: relative;
+    height: 100vh;
+    width: 15vw;
+    background-color: var(--green);
+}
+
+nav > #navFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    float: left;
+    top: 0;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+nav > #navFlex > .flexItem {
+    width: 100%;
+    background: var(--);
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+    flex-direction: row;
+    font-size: 1.5rem;
+    border-radius: 1.2rem;
+    transition: ease .2s;
+}
+
+nav > #navFlex > .flexItem > svg{
+    height: 4rem;
+}
+
+nav > #navFlex > .flexItem:hover {
+    background: var(--light-green); 
+    flex-grow: 1;
+}
+
+nav > #navFlex > .flexItem:nth-child(1){
+    padding: 0 0 0 1rem;
+    margin-bottom: 2rem;
+    align-self: center;
+    height: 5rem;
+}
+
+nav > #navFlex > .flexItem:nth-child(1):hover{
+    flex-grow: 0;
+    background: none;
+    cursor: auto;
+}
+
+nav > #navFlex > .flexItem:nth-child(1) > svg{
+    height: 4rem;
+    width: auto;
+}
+
+nav > #navFlex > .flexItem:nth-child(1) > svg:nth-child(1){
+    justify-self: flex-start;
+    align-self: center;
+}
+
+nav > #navFlex > .flexItem:nth-child(1) > .burger {
+    height: 3rem;
+    position: absolute;
+    right: 0;
+    padding-right: 2rem;
+    justify-self: flex-end;
+    align-self: center;
+    cursor: pointer;
+}
+
+nav > .navUser {
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--light-green);
+}
+
+nav > .navUser > .user {
+    align-self: flex-start;
+}
+
+nav > .navUser > .user > h2 {
+    font-size: 1.8rem;
+}
+
+nav > .navUser > .user > p {
+    font-size: 1.5rem;
+}
+
+nav > .navUser > .logOut {
+    position: absolute;
+    right: 0;
+    margin-right: 2.5rem;
+    height: 40%;
+    width: auto;
+    justify-self: flex-end;
+    cursor: pointer;
+}
+
+nav > .navUser > img {
+    height: 7rem;
+    width: 7rem;
+    margin-right: 1rem;
+    object-fit: cover;
+    border-radius: 1.3rem;
 }
 
